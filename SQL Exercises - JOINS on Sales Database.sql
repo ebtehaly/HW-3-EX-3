@@ -112,7 +112,7 @@ SELECT s.name,
   INNER JOIN customer c
     ON s.city = c.city;
 
-
+This displays the salesman' name, customer's name and the customenr's city by an inner joint of the city object matching in both of the tables: salesman and customer. 
 
 /* 2. Explain in plain English in one sentence what is the output of the folloiwng block of SQL commands: */
 
@@ -125,3 +125,5 @@ SELECT c.cust_name AS "Customer Name",
     ON c.salesman_id = s.salesman_id
   WHERE s.commission > 0.12;
 
+This displays customer's name in ascending order along with cutomer's city, it also displays the salesman's name in ascending order along with the salesman's commision 
+for commisions greater than 0.12, an inner joint is used to match salesman id in both tables: salesman and customer.
